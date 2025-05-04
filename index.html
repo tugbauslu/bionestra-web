@@ -1,199 +1,81 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bionestra</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', sans-serif; line-height: 1.6; background: #f8fafa; color: #1a1a1a; }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
     header {
-      background: white; padding: 20px 40px;
-      display: flex; justify-content: space-between; align-items: center;
-      position: sticky; top: 0; z-index: 999; box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     nav a {
-      margin: 0 15px; text-decoration: none; color: #2CA6A4; font-weight: 500;
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
     }
-    .logo { font-size: 24px; font-weight: 700; color: #2CA6A4; }
-    .actions button {
-      margin-left: 10px; padding: 8px 16px; border: none; border-radius: 6px;
-      font-weight: 600; cursor: pointer;
+    nav a:hover {
+      color: #2CA6A4;
     }
-    .ghost { background: none; color: #2CA6A4; }
-    .primary { background: #2CA6A4; color: white; }
-
-    section { padding: 80px 60px; }
-    .hero, .product, .about { display: flex; justify-content: space-between; align-items: center; gap: 60px; flex-wrap: wrap; }
-    .hero h1, .product h2, .features h2, .about h2, .cta h2 {
-      font-size: 36px; margin-bottom: 20px; color: #1a1a1a;
+    .section {
+      padding: 100px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-    .hero p, .product p, .about p, .features p {
-      font-size: 18px; color: #555;
-    }
-    .btn-group button {
-      padding: 12px 20px; font-size: 16px; margin: 15px 15px 0 0;
-      border-radius: 8px; cursor: pointer; border: none;
-    }
-    .secondary { background: white; color: #2CA6A4; border: 2px solid #2CA6A4; }
-
-    .image-placeholder {
-      width: 400px; height: 280px; background: #e0e0e0;
-      display: flex; align-items: center; justify-content: center;
-      border-radius: 12px; color: #aaa;
-    }
-
-    .features-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px;
-    }
-    .feature-box {
-      background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-      text-align: center;
-    }
-    .feature-box h3 { color: #2CA6A4; margin-bottom: 10px; }
-    .feature-box p { font-size: 14px; color: #444; }
-
     footer {
-      background: #2a4d59; color: white; padding: 60px 60px 30px;
-    }
-    footer h4 { margin-bottom: 10px; }
-    footer p, footer a {
-      color: #ddd; font-size: 14px; text-decoration: none;
-    }
-    .footer-columns {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-top: 40px;
-    }
-    .cta {
-      background: linear-gradient(to right, #2CA6A4, #0d5866); color: white; text-align: center;
-      padding: 80px 20px;
-    }
-    .cta button {
-      background: white; color: #2CA6A4; font-weight: 600; border: none;
-      padding: 12px 24px; margin-top: 20px; border-radius: 8px;
+      background-color: #f5f5f5;
+      padding: 60px 20px;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <div class="logo">Bionestra</div>
+    <div class="logo"><a href="index.html" style="text-decoration:none; color:#2CA6A4;">Bionestra</a></div>
     <nav>
-      <a href="#">Ana Sayfa</a>
-      <a href="#">Ürünler</a>
-      <a href="#">Özellikler</a>
-      <a href="#">Hakkımızda</a>
-      <a href="#">İletişim</a>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="urun.html">Ürünler</a>
+      <a href="#ozellikler">Özellikler</a>
+      <a href="#hakkimizda">Hakkımızda</a>
+      <a href="#iletisim">İletişim</a>
     </nav>
-    <div class="actions">
-      <button class="ghost">Giriş Yap</button>
-      <button class="ghost">🛒</button>
-      <button class="primary">Satın Al</button>
-    </div>
+    <button style="padding:10px 20px; background:#2CA6A4; color:white; border:none; border-radius:6px;">Satın Al</button>
   </header>
 
-  <section class="hero">
-    <div>
-      <h1>Bionestra ile Ağız Sağlığında Yeni Bir Çağ</h1>
-      <p>SmartBrush Q-Detect ile diş fırçalama deneyiminizi dönüştürün. Yapay zekayla desteklenen bu cihaz, kişisel ağız bakımınızı optimize eder.</p>
-      <div class="btn-group">
-        <button class="primary">Hemen Keşfet</button>
-        <button class="secondary">Daha Fazla Bilgi</button>
-      </div>
-    </div>
-    <div class="image-placeholder">[ Görsel Alanı ]</div>
+  <section class="section">
+    <h1>Bionesta ile Ağız Sağlığında Yeni Bir Çağ</h1>
+    <p>Biyomedikal araştırmalar ve medikal cihazlar geliştiren Bionestra, ilk ürünü SmartBrush Q-Detect ile diş fırçalama deneyiminizi dönüştürüyor.</p>
   </section>
 
-  <section class="product">
-    <div class="image-placeholder">[ SmartBrush ]</div>
-    <div>
-      <h2>SmartBrush Q-Detect</h2>
-      <p>Yapay zeka destekli akıllı diş fırçası ile ağız sağlığınızı yeni bir seviyeye taşıyın.</p>
-      <ul>
-        <li>✓ Gerçek zamanlı plak tespiti</li>
-        <li>✓ Kişiselleştirilmiş fırçalama programları</li>
-        <li>✓ Mobil uygulama entegrasyonu</li>
-        <li>✓ Hızlı şarj ve uzun pil ömrü</li>
-        <li>✓ Değiştirilebilir fırça başlıkları</li>
-      </ul>
-      <div class="btn-group">
-        <button class="primary">Şimdi Satın Al</button>
-        <button class="secondary">Teknik Özellikler</button>
-      </div>
-    </div>
-  </section>
-
-  <section class="features">
+  <section id="ozellikler" class="section">
     <h2>Üstün Özellikler</h2>
-    <p>SmartBrush Q-Detect, biyomedikal araştırmaların sonucu geliştirilen yenilikçi özelliklere sahiptir.</p>
-    <div class="features-grid">
-      <div class="feature-box">
-        <h3>Akıllı Uygulama</h3>
-        <p>Mobil uygulamayla analiz ve öneriler alın.</p>
-      </div>
-      <div class="feature-box">
-        <h3>30 Gün Pil Ömrü</h3>
-        <p>Uzun kullanım için yüksek performanslı pil.</p>
-      </div>
-      <div class="feature-box">
-        <h3>Hızlı Şarj</h3>
-        <p>2 saat içinde tam şarj imkanı.</p>
-      </div>
-      <div class="feature-box">
-        <h3>Antibakteriyel Kaplama</h3>
-        <p>Hijyenik kullanım için özel yüzey.</p>
-      </div>
-      <div class="feature-box">
-        <h3>Detaylı Analiz</h3>
-        <p>Fırçalama süresi ve basınç ölçümü.</p>
-      </div>
-      <div class="feature-box">
-        <h3>Bulut AI</h3>
-        <p>Yapay zeka destekli öğrenen sistem.</p>
-      </div>
-    </div>
+    <p>SmartBrush Q-Detect ile gelen yenilikçi teknolojiler: hızlı şarj, antibakteriyel kaplama, detaylı analiz ve daha fazlası.</p>
   </section>
 
-  <section class="about">
-    <div>
-      <h2>Bionestra Hakkında</h2>
-      <p>Bionestra, ağız sağlığı ve yenilikçi tıbbi cihazlar alanında çalışan bir teknoloji şirketidir. Misyonumuz, bireylerin yaşam kalitesini artıracak çözümler geliştirmektir.</p>
-      <p>SmartBrush Q-Detect, yıllar süren Ar-Ge’nin sonucudur ve Türkiye’de geliştirilen ilk yapay zekalı diş fırçasıdır.</p>
-    </div>
-    <div class="image-placeholder">[ Şirket Görseli ]</div>
+  <section id="hakkimizda" class="section">
+    <h2>Bionestra Hakkında</h2>
+    <p>Bionestra, ağız sağlığı alanında devrim yaratmak amacıyla kurulmuş bir biyomedikal araştırma ve cihaz firmasıdır.</p>
   </section>
 
-  <section class="cta">
-    <h2>Ağız Sağlığınızı Dönüştürmeye Hazır Mısınız?</h2>
-    <p>SmartBrush Q-Detect ile diş fırçalama deneyiminizi bir üst seviyeye taşıyın.</p>
-    <button>Şimdi Satın Al</button>
-  </section>
-
-  <footer>
-    <div class="footer-columns">
-      <div>
-        <h4>Bionestra</h4>
-        <p>Biyomedikal cihazlar geliştiren yenilikçi şirket.</p>
-        <p>📍 İstanbul, Türkiye</p>
-      </div>
-      <div>
-        <h4>Ürünler</h4>
-        <p>SmartBrush Q-Detect</p>
-        <p>Yedek Başlıklar</p>
-        <p>Şarj Standı</p>
-      </div>
-      <div>
-        <h4>Şirket</h4>
-        <p>Hakkımızda</p>
-        <p>Kariyer</p>
-        <p>Blog</p>
-      </div>
-      <div>
-        <h4>İletişim</h4>
-        <p>📞 +90 216 123 45 67</p>
-        <p>✉️ info@bionestra.com</p>
-      </div>
-    </div>
+  <footer id="iletisim">
+    <h2>İletişim</h2>
+    <p>Teknopark İstanbul, B1 Blok No:123, Pendik, İstanbul</p>
+    <p>+90 216 123 45 67</p>
+    <p>info@bionestra.com</p>
   </footer>
+
 </body>
 </html>
