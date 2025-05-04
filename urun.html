@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SmartBrush Q-Detect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     html {
       scroll-behavior: smooth;
@@ -11,36 +12,92 @@
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
-      padding: 0;
+      background-color: #f9fbfc;
+      color: #1f2937;
     }
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px 60px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     nav a {
       margin: 0 15px;
       text-decoration: none;
-      color: #333;
+      color: #1f2937;
       font-weight: 500;
     }
     nav a:hover {
       color: #2CA6A4;
     }
-    .section {
-      padding: 100px 20px;
-      max-width: 1000px;
-      margin: auto;
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2CA6A4;
+    }
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 80px 60px;
+      gap: 40px;
+      background-color: #ffffff;
+    }
+    .product-info {
+      flex: 1 1 400px;
+    }
+    .product-info h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .product-info p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .price {
+      font-size: 28px;
+      color: #2CA6A4;
+      margin-bottom: 20px;
+    }
+    .features {
+      list-style: none;
+      padding: 0;
+    }
+    .features li {
+      margin-bottom: 10px;
+    }
+    .image-placeholder {
+      width: 100%;
+      max-width: 400px;
+      height: 300px;
+      background: #e5e7eb;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6b7280;
+      font-weight: 500;
+    }
+    footer {
+      background: #2a4d59;
+      color: white;
+      padding: 60px;
+      margin-top: 60px;
+    }
+    footer p {
+      margin: 5px 0;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo"><a href="index.html" style="text-decoration:none; color:#2CA6A4;">Bionestra</a></div>
+    <div class="logo">Bionestra</div>
     <nav>
       <a href="index.html">Ana Sayfa</a>
       <a href="urun.html">Ürünler</a>
@@ -48,13 +105,30 @@
       <a href="index.html#hakkimizda">Hakkımızda</a>
       <a href="index.html#iletisim">İletişim</a>
     </nav>
-    <button style="padding:10px 20px; background:#2CA6A4; color:white; border:none; border-radius:6px;">Satın Al</button>
   </header>
 
-  <section class="section">
-    <h1>SmartBrush Q-Detect</h1>
-    <p>Yapay zeka destekli akıllı diş fırçası. Plak tespiti, mobil uygulama, kişiselleştirilmiş öneriler ve çok daha fazlası burada.</p>
+  <section class="product-container">
+    <div class="product-info">
+      <h1>SmartBrush Q-Detect</h1>
+      <p>Yapay zeka destekli akıllı diş fırçası. Gerçek zamanlı analiz, gelişmiş sensörler ve kişiselleştirilmiş bakım önerileri sunar.</p>
+      <div class="price">₺2.499,00</div>
+      <ul class="features">
+        <li>✓ AI Destekli Fırçalama Analizi</li>
+        <li>✓ Mobil Uygulama Entegrasyonu</li>
+        <li>✓ 30 Gün Pil Ömrü</li>
+        <li>✓ Gerçek Zamanlı Uyarılar</li>
+        <li>✓ Antibakteriyel Kaplama</li>
+      </ul>
+    </div>
+    <div class="image-placeholder">[ Ürün Görseli ]</div>
   </section>
+
+  <footer>
+    <h2>İletişim</h2>
+    <p>📍 Teknopark İstanbul, B1 Blok</p>
+    <p>📞 +90 216 123 45 67</p>
+    <p>✉️ info@bionestra.com</p>
+  </footer>
 
 </body>
 </html>
