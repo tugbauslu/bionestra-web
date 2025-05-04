@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartBrush Q-Detect - Ürün Detayı</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background: #f9fafa; margin: 0; color: #222; }
+    header, footer {
+      background: white; padding: 20px 40px;
+      display: flex; justify-content: space-between; align-items: center;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+    nav a {
+      margin: 0 12px; text-decoration: none; color: #2CA6A4; font-weight: 500;
+    }
+    .logo { font-weight: 700; font-size: 24px; color: #2CA6A4; }
+
+    .main {
+      display: flex; gap: 60px; padding: 60px; flex-wrap: wrap;
+      background: #fff; margin: 30px auto; max-width: 1200px; border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.03);
+    }
+    .image-placeholder {
+      width: 400px; height: 400px; background: #e0e0e0;
+      display: flex; align-items: center; justify-content: center; border-radius: 8px; color: #999;
+    }
+    .info h1 { font-size: 32px; color: #2b4c56; margin-bottom: 10px; }
+    .price { font-size: 28px; margin: 10px 0; color: #2b4c56; }
+    .old-price { text-decoration: line-through; color: #888; margin-left: 10px; }
+    .badge { background: #27ae60; color: white; padding: 4px 10px; border-radius: 6px; font-size: 12px; }
+    .features { margin-top: 20px; }
+    .features li { margin-bottom: 6px; }
+
+    .tabs { display: flex; margin: 30px 0 10px; }
+    .tabs button {
+      padding: 10px 20px; margin-right: 10px; border: none;
+      background: #f2f2f2; cursor: pointer; border-radius: 6px;
+    }
+    .tabs button.active { background: #2CA6A4; color: white; }
+
+    section { max-width: 1200px; margin: 40px auto; padding: 0 60px; }
+    section h2 { color: #2CA6A4; margin-bottom: 10px; }
+
+    .flex { display: flex; gap: 60px; flex-wrap: wrap; margin-top: 30px; }
+    .box { flex: 1; min-width: 300px; }
+
+    footer {
+      flex-wrap: wrap; font-size: 14px; margin-top: 60px; background: #2a4d59;
+      color: white; padding-top: 40px;
+    }
+    footer .column {
+      flex: 1; min-width: 200px; padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Bionestra</div>
+    <nav>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="#">Ürünler</a>
+      <a href="#">Özellikler</a>
+      <a href="#">Hakkımızda</a>
+      <a href="#">İletişim</a>
+    </nav>
+    <button style="padding:10px 20px; background:#2CA6A4; color:white; border:none; border-radius:6px;">Satın Al</button>
+  </header>
+
+  <div class="main">
+    <div class="image-placeholder">[ Ürün Görseli ]</div>
+    <div class="info">
+      <h1>SmartBrush Q-Detect</h1>
+      <p>Yapay Zeka Destekli Akıllı Diş Fırçası</p>
+      <div class="price">₺2.499,00 <span class="old-price">₺2.999,00</span> <span class="badge">%17 İndirim</span></div>
+      <ul class="features">
+        <li>✓ Stokta var - 24 saat içinde kargoya verilir</li>
+        <li>✓ 2 yıl garanti</li>
+        <li>✓ 30 gün içinde ücretsiz iade</li>
+        <li>✓ Ücretsiz kargo</li>
+      </ul>
+    </div>
+  </div>
+
+  <section>
+    <div class="tabs">
+      <button class="active">Genel Bakış</button>
+      <button>Teknik Özellikler</button>
+      <button>Nasıl Çalışır</button>
+      <button>Mobil Uygulama</button>
+      <button>Değerlendirmeler</button>
+      <button>SSS</button>
+    </div>
+
+    <h2>SmartBrush Q-Detect: Geleceğin Diş Fırçası</h2>
+    <p>SmartBrush Q-Detect, biyomedikal araştırmalarımızın sonucu olarak geliştirilen, yapay zeka destekli akıllı diş fırçasıdır. Diş fırçalama alışkanlıklarınızı analiz eder ve size özel öneriler sunar.</p>
+
+    <div class="flex">
+      <div class="box image-placeholder">[ Üstün Sensör ]</div>
+      <div class="box">
+        <h3>Üstün Sensör Teknolojisi</h3>
+        <ul>
+          <li>✓ 6 eksenli hareket sensörleri</li>
+          <li>✓ Basınç algılama teknolojisi</li>
+          <li>✓ Konum ve açı takibi</li>
+          <li>✓ Gerçek zamanlı veri analizi</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flex" style="margin-top: 60px;">
+      <div class="box">
+        <h3>Yapay Zeka Algoritmaları</h3>
+        <ul>
+          <li>✓ Kişiselleştirilmiş fırçalama programları</li>
+          <li>✓ Eksik bölge tespiti ve uyarılar</li>
+          <li>✓ Fırçalama tekniği analizi</li>
+          <li>✓ Sürekli öğrenen algoritma</li>
+        </ul>
+      </div>
+      <div class="box image-placeholder">[ Yapay Zeka ]</div>
+    </div>
+
+    <div class="flex" style="margin-top: 60px;">
+      <div class="box image-placeholder">[ Mobil Uygulama ]</div>
+      <div class="box">
+        <h3>Akıllı Mobil Uygulama</h3>
+        <ul>
+          <li>✓ Detaylı fırçalama istatistikleri</li>
+          <li>✓ Aylık ilerleme raporları</li>
+          <li>✓ Değişim hatırlatıcıları</li>
+          <li>✓ Çoklu profil desteği</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="margin-top:60px;">Kutu İçeriği</h2>
+    <div class="flex">
+      <div class="box">
+        <ul>
+          <li>✓ 1 x SmartBrush Q-Detect</li>
+          <li>✓ 1 x Şarj Standı</li>
+          <li>✓ 1 x Seyahat Çantası</li>
+        </ul>
+      </div>
+      <div class="box">
+        <ul>
+          <li>✓ 2 x Değiştirilebilir Başlık</li>
+          <li>✓ 1 x USB-C Şarj Kablosu</li>
+          <li>✓ 1 x Kullanım Kılavuzu</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="column">
+      <h4>Bionestra</h4>
+      <p>Yenilikçi medikal cihazlar geliştiriyoruz.</p>
+    </div>
+    <div class="column">
+      <h4>Ürünler</h4>
+      <p>SmartBrush Q-Detect</p>
+      <p>Yedek Başlık</p>
+      <p>Şarj Standı</p>
+    </div>
+    <div class="column">
+      <h4>İletişim</h4>
+      <p>info@bionestra.com</p>
+      <p>+90 216 123 45 67</p>
+    </div>
+  </footer>
+</body>
+</html>
