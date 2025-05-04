@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -71,6 +72,27 @@
     .features li {
       margin-bottom: 10px;
     }
+    .buttons {
+      margin-top: 30px;
+    }
+    .btn {
+      padding: 12px 24px;
+      border-radius: 8px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      margin: 10px 10px 0 0;
+      font-size: 16px;
+    }
+    .btn-primary {
+      background-color: #2CA6A4;
+      color: white;
+    }
+    .btn-secondary {
+      background-color: white;
+      color: #2CA6A4;
+      border: 2px solid #2CA6A4;
+    }
     .image-placeholder {
       width: 100%;
       max-width: 400px;
@@ -104,6 +126,8 @@
       <a href="index.html#ozellikler">Özellikler</a>
       <a href="index.html#hakkimizda">Hakkımızda</a>
       <a href="index.html#iletisim">İletişim</a>
+      <a href="giris.html">Giriş Yap</a>
+      <a href="uye-ol.html">Üye Ol</a>
     </nav>
   </header>
 
@@ -119,6 +143,10 @@
         <li>✓ Gerçek Zamanlı Uyarılar</li>
         <li>✓ Antibakteriyel Kaplama</li>
       </ul>
+      <div class="buttons">
+        <button class="btn btn-primary" onclick="alert('Ürün sepete eklendi!')">🛒 Sepete Ekle</button>
+        <button class="btn btn-secondary" onclick="alert('Satın alma sayfasına yönlendiriliyorsunuz.')">💳 Satın Al</button>
+      </div>
     </div>
     <div class="image-placeholder">[ Ürün Görseli ]</div>
   </section>
