@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yorumlar ve Değerlendirmeler</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #f9fafb;
+      padding: 40px;
+    }
+    h2 {
+      color: #2CA6A4;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .comment-section {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .comment {
+      border-bottom: 1px solid #eee;
+      padding: 15px 0;
+    }
+    .comment:last-child {
+      border-bottom: none;
+    }
+    .comment .name {
+      font-weight: 600;
+    }
+    .comment .stars {
+      color: #fbbf24;
+    }
+    .comment-form {
+      margin-top: 40px;
+    }
+    textarea, input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 12px 20px;
+      font-size: 16px;
+      background-color: #2CA6A4;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Yorumlar ve Değerlendirmeler</h2>
+  <div class="comment-section">
+
+    <div class="comment">
+      <div class="name">Zeynep K.</div>
+      <div class="stars">★★★★★</div>
+      <div class="text">Cihazın analiz özellikleri harika! Uygulama ile entegrasyonu çok pratik.</div>
+    </div>
+
+    <div class="comment">
+      <div class="name">Mehmet T.</div>
+      <div class="stars">★★★★☆</div>
+      <div class="text">Çok memnunum ama kutu içeriğinde yedek başlık olsaydı daha iyi olurdu.</div>
+    </div>
+
+    <div class="comment-form">
+      <h3>Sen de Değerlendir</h3>
+      <form>
+        <input type="text" placeholder="Adınız" required />
+        <textarea rows="4" placeholder="Yorumunuz" required></textarea>
+        <button type="submit" onclick="alert('Yorumunuz gönderildi (örnek)!')">Gönder</button>
+      </form>
+    </div>
+
+  </div>
+
+</body>
+</html>
